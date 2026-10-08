@@ -20,7 +20,7 @@ import { IdempotencyKey } from './wallet/domain/entities/idempotency-key.entity.
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
       entities: [Account, Transaction, IdempotencyKey],
-      synchronize: process.env.NODE_ENV !== 'production',
+      synchronize: process.env.DB_SYNC !== 'false',
     }),
     WalletModule,
   ],
