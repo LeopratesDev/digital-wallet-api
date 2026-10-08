@@ -18,7 +18,8 @@ NestJS (Node.js/TypeScript) · PostgreSQL · TypeORM · Zod · Swagger
 - `POST /accounts/transfer` — transferência entre contas (requer header
   `idempotency-key`)
 
-Documentação interativa em `/docs` (Swagger) após subir a aplicação.
+**Deploy:** https://digital-wallet-api-production-887f.up.railway.app  
+**Swagger:** https://digital-wallet-api-production-887f.up.railway.app/docs
 
 ## Como rodar
 
@@ -40,5 +41,5 @@ concorrentes.
 
 ## Status
 
-🚧 Em desenvolvimento — próximos passos em
-[docs/DECISIONS.md](docs/DECISIONS.md#próximos-passos-se-o-projeto-evoluir).
+Deployado no Railway com PostgreSQL. Para detalhes de arquitetura e decisões de design, ver
+[docs/DECISIONS.md](docs/DECISIONS.md).
