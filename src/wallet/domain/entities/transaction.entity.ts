@@ -4,6 +4,7 @@ import {
   Entity,
   ManyToOne,
   PrimaryGeneratedColumn,
+  type Relation,
 } from 'typeorm';
 import { Account } from './account.entity.js';
 
@@ -19,7 +20,7 @@ export class Transaction {
   id: string;
 
   @ManyToOne(() => Account, (account) => account.transactions)
-  account: Account;
+  account: Relation<Account>;
 
   @Column()
   accountId: string;

@@ -4,6 +4,7 @@ import {
   Entity,
   OneToMany,
   PrimaryGeneratedColumn,
+  type Relation,
 } from 'typeorm';
 import { Transaction } from './transaction.entity.js';
 
@@ -25,5 +26,5 @@ export class Account {
   createdAt: Date;
 
   @OneToMany(() => Transaction, (transaction) => transaction.account)
-  transactions: Transaction[];
+  transactions: Relation<Transaction[]>;
 }
